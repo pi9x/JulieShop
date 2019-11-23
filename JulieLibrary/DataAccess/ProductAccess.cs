@@ -13,7 +13,7 @@ namespace JulieLibrary
         public static void AddProduct(Product product)
         {
             string query =  "INSERT INTO Product (Code, Name, ExpDate, Company, MfgYear, Category) " +
-                            $"VALUES ({product.Code}, {product.Name}, {product.ExpDate}, {product.Company}, {product.MfgYear}, {product.Category})";
+                            $"VALUES ('{product.Code}', '{product.Name}', {product.ExpDate}, '{product.Company}', {product.MfgYear}, '{product.Category}')";
             Helper.DapperExecute(query);
         }
 
@@ -23,16 +23,18 @@ namespace JulieLibrary
             return Helper.DapperQuery(query);
         }
 
-        public static void DeleteProduct(Product product)
+        public static void DeleteProduct(int id)
         {
-            string query = $"DELETE FROM Product WHERE Code = {product.Code}";
+            string query = $"DELETE FROM Product WHERE ID = {id}";
             Helper.DapperExecute(query);
         }
 
-        //public static void UpdateProduct(int ID, Product product)
-        //{
-        //    string query = $"UPDATE Product SET";
-        //}
-        // TODO - Write UpdateProduct() method.
+        public static void UpdateProduct(int id, Product product)
+        {
+            string query =   "UPDATE Product " +
+                            $"SET Code = '{product.Code}', Name = '{product.Name}', ExpDate = {product.ExpDate}, Company = '{product.Company}', MfgYear = {product.MfgYear}, Category = '{product.Category}' " +
+                            $"WHERE ID = {id}";
+            Helper.DapperExecute(query);
+        }
     }
 }

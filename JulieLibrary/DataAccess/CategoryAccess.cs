@@ -11,16 +11,22 @@ namespace JulieLibrary
     {
         public static void AddCategory(Category category)
         {
-            string query = $"INSERT INTO Category (Name) VALUES {category.Name}";
+            string query = $"INSERT INTO Category (Name) VALUES ('{category.Name}')";
             Helper.DapperExecute(query);
         }
 
-        public static void DeleteCategory(Category category)
+        public static void DeleteCategory(int id)
         {
-            string queryForCategory = $"DELETE FROM Category WHERE Name = {category.Name}";
-            Helper.DapperExecute(queryForCategory);
+            string query = $"DELETE FROM Category WHERE ID = {id}";
+            Helper.DapperExecute(query);
         }
 
-        // TODO - Write UpdateCategory() method.
+        public static void UpdateCategory(int id, string name)
+        {
+            string query = "UPDATE Category " +
+                            $"SET Name = '{name}' " +
+                            $"WHERE ID = {id}";
+            Helper.DapperExecute(query);
+        }
     }
 }
