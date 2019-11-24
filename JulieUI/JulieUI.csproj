@@ -73,6 +73,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCategories.Designer.cs">
+      <DependentUpon>UCCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHome.Designer.cs">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProducts.Designer.cs">
+      <DependentUpon>UCProducts.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +106,15 @@
     <Content Include="Database\JulieShop.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="UCCategories.resx">
+      <DependentUpon>UCCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHome.resx">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProducts.resx">
+      <DependentUpon>UCProducts.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Database\JulieShop.db-journal" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
