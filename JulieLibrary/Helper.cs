@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Text;
 
 namespace JulieLibrary
@@ -18,7 +19,7 @@ namespace JulieLibrary
 
         public static void DapperExecute(string query)
         {
-            using (IDbConnection connection = new SqlConnection(GetConnectionString()))
+            using (IDbConnection connection = new SQLiteConnection(GetConnectionString()))
             {
                 connection.Execute(query);
             }
@@ -26,7 +27,7 @@ namespace JulieLibrary
 
         public static List<Product> DapperQuery(string query)
         {
-            using (IDbConnection connection = new SqlConnection(GetConnectionString()))
+            using (IDbConnection connection = new SQLiteConnection(GetConnectionString()))
             {
                 return connection.Query<Product>(query).AsList();
             }

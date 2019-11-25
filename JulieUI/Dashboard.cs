@@ -16,5 +16,32 @@ namespace JulieUI
         {
             InitializeComponent();
         }
+
+        UserControl ucHome       = new UCHome();
+        UserControl ucCategories = new UCCategories();
+        UserControl ucProducts   = new UCProducts();
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            panelUserControls.Controls.Clear();
+            panelUserControls.Controls.Add(ucHome);
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            panelUserControls.Controls.Clear();
+            panelUserControls.Controls.Add(ucHome);
+        }
+        private void buttonCategory_Click(object sender, EventArgs e)
+        {
+            panelUserControls.Controls.Clear();
+            panelUserControls.Controls.Add(ucCategories);
+        }
+
+        private void buttonProduct_Click(object sender, EventArgs e)
+        {
+            panelUserControls.Controls.Clear();
+            panelUserControls.Controls.Add(ucProducts);
+        }
     }
 }
