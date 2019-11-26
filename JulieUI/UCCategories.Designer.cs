@@ -28,33 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCategories));
-            this.dataGridViewCategories = new System.Windows.Forms.DataGridView();
             this.panelProductsData = new System.Windows.Forms.Panel();
+            this.dataGridViewCategories = new System.Windows.Forms.DataGridView();
             this.panelCategoriesButtons = new System.Windows.Forms.Panel();
-            this.buttonDeleteProduct = new System.Windows.Forms.Button();
-            this.buttonEditProduct = new System.Windows.Forms.Button();
-            this.buttonAddProduct = new System.Windows.Forms.Button();
+            this.buttonDeleteCategory = new System.Windows.Forms.Button();
+            this.buttonEditCategory = new System.Windows.Forms.Button();
+            this.buttonAddCategory = new System.Windows.Forms.Button();
             this.panelTopBar = new System.Windows.Forms.Panel();
-            this.buttonCloseWindow = new System.Windows.Forms.Button();
-            this.buttonMinimize = new System.Windows.Forms.Button();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategories)).BeginInit();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.textBoxSearchCategory = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelProductsData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategories)).BeginInit();
             this.panelCategoriesButtons.SuspendLayout();
             this.panelTopBar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dataGridViewCategories
-            // 
-            this.dataGridViewCategories.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(197)))), ((int)(((byte)(201)))));
-            this.dataGridViewCategories.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCategories.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewCategories.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewCategories.Name = "dataGridViewCategories";
-            this.dataGridViewCategories.Size = new System.Drawing.Size(730, 418);
-            this.dataGridViewCategories.TabIndex = 0;
             // 
             // panelProductsData
             // 
@@ -62,113 +53,159 @@
             this.panelProductsData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelProductsData.Location = new System.Drawing.Point(0, 32);
             this.panelProductsData.Name = "panelProductsData";
-            this.panelProductsData.Size = new System.Drawing.Size(730, 418);
+            this.panelProductsData.Size = new System.Drawing.Size(730, 392);
             this.panelProductsData.TabIndex = 3;
+            // 
+            // dataGridViewCategories
+            // 
+            this.dataGridViewCategories.AllowUserToAddRows = false;
+            this.dataGridViewCategories.AllowUserToDeleteRows = false;
+            this.dataGridViewCategories.AllowUserToResizeColumns = false;
+            this.dataGridViewCategories.AllowUserToResizeRows = false;
+            this.dataGridViewCategories.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCategories.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(197)))), ((int)(((byte)(201)))));
+            this.dataGridViewCategories.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewCategories.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridViewCategories.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(197)))), ((int)(((byte)(201)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 4, 0, 3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCategories.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(197)))), ((int)(((byte)(201)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCategories.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewCategories.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewCategories.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(197)))), ((int)(((byte)(201)))));
+            this.dataGridViewCategories.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewCategories.MultiSelect = false;
+            this.dataGridViewCategories.Name = "dataGridViewCategories";
+            this.dataGridViewCategories.ReadOnly = true;
+            this.dataGridViewCategories.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridViewCategories.RowHeadersVisible = false;
+            this.dataGridViewCategories.RowTemplate.Height = 24;
+            this.dataGridViewCategories.RowTemplate.ReadOnly = true;
+            this.dataGridViewCategories.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCategories.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewCategories.Size = new System.Drawing.Size(730, 392);
+            this.dataGridViewCategories.TabIndex = 3;
             // 
             // panelCategoriesButtons
             // 
             this.panelCategoriesButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
-            this.panelCategoriesButtons.Controls.Add(this.buttonDeleteProduct);
-            this.panelCategoriesButtons.Controls.Add(this.buttonEditProduct);
-            this.panelCategoriesButtons.Controls.Add(this.buttonAddProduct);
+            this.panelCategoriesButtons.Controls.Add(this.buttonDeleteCategory);
+            this.panelCategoriesButtons.Controls.Add(this.buttonEditCategory);
+            this.panelCategoriesButtons.Controls.Add(this.buttonAddCategory);
             this.panelCategoriesButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelCategoriesButtons.Location = new System.Drawing.Point(0, 450);
+            this.panelCategoriesButtons.Location = new System.Drawing.Point(0, 424);
             this.panelCategoriesButtons.Name = "panelCategoriesButtons";
-            this.panelCategoriesButtons.Size = new System.Drawing.Size(730, 50);
+            this.panelCategoriesButtons.Size = new System.Drawing.Size(730, 44);
             this.panelCategoriesButtons.TabIndex = 2;
             // 
-            // buttonDeleteProduct
+            // buttonDeleteCategory
             // 
-            this.buttonDeleteProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonDeleteProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDeleteProduct.BackgroundImage")));
-            this.buttonDeleteProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDeleteProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonDeleteProduct.Location = new System.Drawing.Point(471, 9);
-            this.buttonDeleteProduct.Name = "buttonDeleteProduct";
-            this.buttonDeleteProduct.Size = new System.Drawing.Size(115, 32);
-            this.buttonDeleteProduct.TabIndex = 5;
-            this.buttonDeleteProduct.UseVisualStyleBackColor = false;
+            this.buttonDeleteCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
+            this.buttonDeleteCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDeleteCategory.BackgroundImage")));
+            this.buttonDeleteCategory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonDeleteCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDeleteCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
+            this.buttonDeleteCategory.Location = new System.Drawing.Point(471, 6);
+            this.buttonDeleteCategory.Name = "buttonDeleteCategory";
+            this.buttonDeleteCategory.Size = new System.Drawing.Size(115, 32);
+            this.buttonDeleteCategory.TabIndex = 5;
+            this.buttonDeleteCategory.UseVisualStyleBackColor = false;
+            this.buttonDeleteCategory.Click += new System.EventHandler(this.buttonDeleteCategory_Click);
             // 
-            // buttonEditProduct
+            // buttonEditCategory
             // 
-            this.buttonEditProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonEditProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonEditProduct.BackgroundImage")));
-            this.buttonEditProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonEditProduct.Location = new System.Drawing.Point(308, 9);
-            this.buttonEditProduct.Name = "buttonEditProduct";
-            this.buttonEditProduct.Size = new System.Drawing.Size(115, 32);
-            this.buttonEditProduct.TabIndex = 4;
-            this.buttonEditProduct.UseVisualStyleBackColor = false;
+            this.buttonEditCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
+            this.buttonEditCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonEditCategory.BackgroundImage")));
+            this.buttonEditCategory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonEditCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEditCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
+            this.buttonEditCategory.Location = new System.Drawing.Point(308, 6);
+            this.buttonEditCategory.Name = "buttonEditCategory";
+            this.buttonEditCategory.Size = new System.Drawing.Size(115, 32);
+            this.buttonEditCategory.TabIndex = 4;
+            this.buttonEditCategory.UseVisualStyleBackColor = false;
+            this.buttonEditCategory.Click += new System.EventHandler(this.buttonEditCategory_Click);
             // 
-            // buttonAddProduct
+            // buttonAddCategory
             // 
-            this.buttonAddProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonAddProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonAddProduct.BackgroundImage")));
-            this.buttonAddProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonAddProduct.Location = new System.Drawing.Point(145, 9);
-            this.buttonAddProduct.Name = "buttonAddProduct";
-            this.buttonAddProduct.Size = new System.Drawing.Size(115, 32);
-            this.buttonAddProduct.TabIndex = 3;
-            this.buttonAddProduct.UseVisualStyleBackColor = false;
+            this.buttonAddCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
+            this.buttonAddCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonAddCategory.BackgroundImage")));
+            this.buttonAddCategory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonAddCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
+            this.buttonAddCategory.Location = new System.Drawing.Point(145, 6);
+            this.buttonAddCategory.Name = "buttonAddCategory";
+            this.buttonAddCategory.Size = new System.Drawing.Size(115, 32);
+            this.buttonAddCategory.TabIndex = 3;
+            this.buttonAddCategory.UseVisualStyleBackColor = false;
+            this.buttonAddCategory.Click += new System.EventHandler(this.buttonAddCategory_Click);
             // 
             // panelTopBar
             // 
-            this.panelTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(33)))), ((int)(((byte)(43)))));
-            this.panelTopBar.Controls.Add(this.buttonCloseWindow);
-            this.panelTopBar.Controls.Add(this.buttonMinimize);
-            this.panelTopBar.Controls.Add(this.textBoxSearch);
+            this.panelTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.panelTopBar.Controls.Add(this.label1);
+            this.panelTopBar.Controls.Add(this.buttonSearch);
+            this.panelTopBar.Controls.Add(this.textBoxSearchCategory);
             this.panelTopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTopBar.Location = new System.Drawing.Point(0, 0);
             this.panelTopBar.Name = "panelTopBar";
             this.panelTopBar.Size = new System.Drawing.Size(730, 32);
             this.panelTopBar.TabIndex = 4;
             // 
-            // buttonCloseWindow
+            // buttonSearch
             // 
-            this.buttonCloseWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonCloseWindow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCloseWindow.BackgroundImage")));
-            this.buttonCloseWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonCloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCloseWindow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(33)))), ((int)(((byte)(43)))));
-            this.buttonCloseWindow.Location = new System.Drawing.Point(694, 0);
-            this.buttonCloseWindow.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonCloseWindow.Name = "buttonCloseWindow";
-            this.buttonCloseWindow.Size = new System.Drawing.Size(36, 32);
-            this.buttonCloseWindow.TabIndex = 0;
-            this.buttonCloseWindow.TabStop = false;
-            this.buttonCloseWindow.UseVisualStyleBackColor = false;
+            this.buttonSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.buttonSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSearch.BackgroundImage")));
+            this.buttonSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.buttonSearch.Location = new System.Drawing.Point(701, 4);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(24, 24);
+            this.buttonSearch.TabIndex = 5;
+            this.buttonSearch.TabStop = false;
+            this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
-            // buttonMinimize
+            // textBoxSearchCategory
             // 
-            this.buttonMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonMinimize.BackgroundImage")));
-            this.buttonMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMinimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(33)))), ((int)(((byte)(43)))));
-            this.buttonMinimize.Location = new System.Drawing.Point(659, 0);
-            this.buttonMinimize.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonMinimize.Name = "buttonMinimize";
-            this.buttonMinimize.Size = new System.Drawing.Size(36, 32);
-            this.buttonMinimize.TabIndex = 0;
-            this.buttonMinimize.TabStop = false;
-            this.buttonMinimize.UseVisualStyleBackColor = false;
+            this.textBoxSearchCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.textBoxSearchCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxSearchCategory.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchCategory.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxSearchCategory.Location = new System.Drawing.Point(457, 3);
+            this.textBoxSearchCategory.Name = "textBoxSearchCategory";
+            this.textBoxSearchCategory.Size = new System.Drawing.Size(270, 27);
+            this.textBoxSearchCategory.TabIndex = 2;
+            this.textBoxSearchCategory.Text = "Enter category name to search...";
+            this.textBoxSearchCategory.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxSearchCategory_MouseClick);
             // 
-            // textBoxSearch
+            // label1
             // 
-            this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
-            this.textBoxSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSearch.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxSearch.Location = new System.Drawing.Point(0, 3);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(270, 27);
-            this.textBoxSearch.TabIndex = 2;
-            this.textBoxSearch.Text = "Enter category name to search...";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(3, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 24);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "CATEGORIES";
             // 
             // UCCategories
             // 
@@ -179,9 +216,10 @@
             this.Controls.Add(this.panelTopBar);
             this.Controls.Add(this.panelCategoriesButtons);
             this.Name = "UCCategories";
-            this.Size = new System.Drawing.Size(730, 500);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategories)).EndInit();
+            this.Size = new System.Drawing.Size(730, 468);
+            this.Load += new System.EventHandler(this.UCCategories_Load);
             this.panelProductsData.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategories)).EndInit();
             this.panelCategoriesButtons.ResumeLayout(false);
             this.panelTopBar.ResumeLayout(false);
             this.panelTopBar.PerformLayout();
@@ -190,16 +228,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridViewCategories;
         private System.Windows.Forms.Panel panelProductsData;
         private System.Windows.Forms.Panel panelCategoriesButtons;
         private System.Windows.Forms.Panel panelTopBar;
-        private System.Windows.Forms.Button buttonCloseWindow;
-        private System.Windows.Forms.Button buttonMinimize;
-        private System.Windows.Forms.TextBox textBoxSearch;
-        private System.Windows.Forms.Button buttonDeleteProduct;
-        private System.Windows.Forms.Button buttonEditProduct;
-        private System.Windows.Forms.Button buttonAddProduct;
+        private System.Windows.Forms.TextBox textBoxSearchCategory;
+        private System.Windows.Forms.Button buttonDeleteCategory;
+        private System.Windows.Forms.Button buttonEditCategory;
+        private System.Windows.Forms.Button buttonAddCategory;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.DataGridView dataGridViewCategories;
+        private System.Windows.Forms.Label label1;
     }
 }

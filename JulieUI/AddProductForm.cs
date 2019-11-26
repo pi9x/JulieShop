@@ -36,6 +36,7 @@ namespace JulieUI
                 product.ExpDate = textBoxExpDate.Text;
                 product.Company = textBoxCompany.Text;
                 product.MfgYear = int.Parse(textBoxMfgYear.Text);
+                product.Category = comboBoxCategory.Text;
                 ProductAccess.AddProduct(product);
                 this.Close();
             }
@@ -48,6 +49,11 @@ namespace JulieUI
         private bool ValidData()
         {
             return (textBoxCode.Text.Length > 0) && (textBoxName.Text.Length > 0) && DateTime.TryParse(textBoxExpDate.Text, out DateTime expDate) && (textBoxCompany.Text.Length > 0) && int.TryParse(textBoxMfgYear.Text, out int mfgYear);
+        }
+
+        private void buttonCloseWindow_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

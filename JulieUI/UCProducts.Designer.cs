@@ -37,14 +37,14 @@
             this.buttonAddProduct = new System.Windows.Forms.Button();
             this.panelProductsData = new System.Windows.Forms.Panel();
             this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
-            this.panelTopBar = new System.Windows.Forms.Panel();
-            this.buttonCloseWindow = new System.Windows.Forms.Button();
-            this.buttonMinimize = new System.Windows.Forms.Button();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.textBoxSearchProduct = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelProductsButtons.SuspendLayout();
             this.panelProductsData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
-            this.panelTopBar.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelProductsButtons
@@ -54,9 +54,9 @@
             this.panelProductsButtons.Controls.Add(this.buttonEditProduct);
             this.panelProductsButtons.Controls.Add(this.buttonAddProduct);
             this.panelProductsButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelProductsButtons.Location = new System.Drawing.Point(0, 450);
+            this.panelProductsButtons.Location = new System.Drawing.Point(0, 424);
             this.panelProductsButtons.Name = "panelProductsButtons";
-            this.panelProductsButtons.Size = new System.Drawing.Size(730, 50);
+            this.panelProductsButtons.Size = new System.Drawing.Size(730, 44);
             this.panelProductsButtons.TabIndex = 0;
             // 
             // buttonDeleteProduct
@@ -66,7 +66,7 @@
             this.buttonDeleteProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDeleteProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonDeleteProduct.Location = new System.Drawing.Point(471, 9);
+            this.buttonDeleteProduct.Location = new System.Drawing.Point(471, 6);
             this.buttonDeleteProduct.Name = "buttonDeleteProduct";
             this.buttonDeleteProduct.Size = new System.Drawing.Size(115, 32);
             this.buttonDeleteProduct.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.buttonEditProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEditProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonEditProduct.Location = new System.Drawing.Point(308, 9);
+            this.buttonEditProduct.Location = new System.Drawing.Point(308, 6);
             this.buttonEditProduct.Name = "buttonEditProduct";
             this.buttonEditProduct.Size = new System.Drawing.Size(115, 32);
             this.buttonEditProduct.TabIndex = 1;
@@ -94,7 +94,7 @@
             this.buttonAddProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonAddProduct.Location = new System.Drawing.Point(145, 9);
+            this.buttonAddProduct.Location = new System.Drawing.Point(145, 6);
             this.buttonAddProduct.Name = "buttonAddProduct";
             this.buttonAddProduct.Size = new System.Drawing.Size(115, 32);
             this.buttonAddProduct.TabIndex = 0;
@@ -105,10 +105,11 @@
             // 
             this.panelProductsData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(197)))), ((int)(((byte)(201)))));
             this.panelProductsData.Controls.Add(this.dataGridViewProducts);
+            this.panelProductsData.Controls.Add(this.panel1);
             this.panelProductsData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelProductsData.Location = new System.Drawing.Point(0, 32);
+            this.panelProductsData.Location = new System.Drawing.Point(0, 0);
             this.panelProductsData.Name = "panelProductsData";
-            this.panelProductsData.Size = new System.Drawing.Size(730, 418);
+            this.panelProductsData.Size = new System.Drawing.Size(730, 424);
             this.panelProductsData.TabIndex = 1;
             // 
             // dataGridViewProducts
@@ -143,7 +144,7 @@
             this.dataGridViewProducts.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewProducts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewProducts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(197)))), ((int)(((byte)(201)))));
-            this.dataGridViewProducts.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewProducts.Location = new System.Drawing.Point(0, 32);
             this.dataGridViewProducts.MultiSelect = false;
             this.dataGridViewProducts.Name = "dataGridViewProducts";
             this.dataGridViewProducts.ReadOnly = true;
@@ -153,62 +154,60 @@
             this.dataGridViewProducts.RowTemplate.ReadOnly = true;
             this.dataGridViewProducts.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewProducts.Size = new System.Drawing.Size(730, 418);
+            this.dataGridViewProducts.Size = new System.Drawing.Size(730, 392);
             this.dataGridViewProducts.TabIndex = 2;
             // 
-            // panelTopBar
+            // panel1
             // 
-            this.panelTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(33)))), ((int)(((byte)(43)))));
-            this.panelTopBar.Controls.Add(this.buttonCloseWindow);
-            this.panelTopBar.Controls.Add(this.buttonMinimize);
-            this.panelTopBar.Controls.Add(this.textBoxSearch);
-            this.panelTopBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTopBar.Location = new System.Drawing.Point(0, 0);
-            this.panelTopBar.Name = "panelTopBar";
-            this.panelTopBar.Size = new System.Drawing.Size(730, 32);
-            this.panelTopBar.TabIndex = 2;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.buttonSearch);
+            this.panel1.Controls.Add(this.textBoxSearchProduct);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(730, 32);
+            this.panel1.TabIndex = 3;
             // 
-            // buttonCloseWindow
+            // buttonSearch
             // 
-            this.buttonCloseWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonCloseWindow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCloseWindow.BackgroundImage")));
-            this.buttonCloseWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonCloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCloseWindow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(33)))), ((int)(((byte)(43)))));
-            this.buttonCloseWindow.Location = new System.Drawing.Point(694, 0);
-            this.buttonCloseWindow.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonCloseWindow.Name = "buttonCloseWindow";
-            this.buttonCloseWindow.Size = new System.Drawing.Size(36, 32);
-            this.buttonCloseWindow.TabIndex = 0;
-            this.buttonCloseWindow.TabStop = false;
-            this.buttonCloseWindow.UseVisualStyleBackColor = false;
+            this.buttonSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.buttonSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSearch.BackgroundImage")));
+            this.buttonSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.buttonSearch.Location = new System.Drawing.Point(701, 4);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(24, 24);
+            this.buttonSearch.TabIndex = 4;
+            this.buttonSearch.TabStop = false;
+            this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
-            // buttonMinimize
+            // textBoxSearchProduct
             // 
-            this.buttonMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.buttonMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonMinimize.BackgroundImage")));
-            this.buttonMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMinimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(33)))), ((int)(((byte)(43)))));
-            this.buttonMinimize.Location = new System.Drawing.Point(659, 0);
-            this.buttonMinimize.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonMinimize.Name = "buttonMinimize";
-            this.buttonMinimize.Size = new System.Drawing.Size(36, 32);
-            this.buttonMinimize.TabIndex = 0;
-            this.buttonMinimize.TabStop = false;
-            this.buttonMinimize.UseVisualStyleBackColor = false;
+            this.textBoxSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.textBoxSearchProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxSearchProduct.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchProduct.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxSearchProduct.Location = new System.Drawing.Point(457, 3);
+            this.textBoxSearchProduct.Name = "textBoxSearchProduct";
+            this.textBoxSearchProduct.Size = new System.Drawing.Size(270, 27);
+            this.textBoxSearchProduct.TabIndex = 4;
+            this.textBoxSearchProduct.Text = "Enter product name to search...";
+            this.textBoxSearchProduct.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxSearchProduct_MouseClick);
             // 
-            // textBoxSearch
+            // label1
             // 
-            this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
-            this.textBoxSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSearch.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxSearch.Location = new System.Drawing.Point(0, 3);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(270, 27);
-            this.textBoxSearch.TabIndex = 2;
-            this.textBoxSearch.Text = "Enter product name to search...";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(3, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 24);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "PRODUCTS";
             // 
             // UCProducts
             // 
@@ -216,16 +215,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(197)))), ((int)(((byte)(201)))));
             this.Controls.Add(this.panelProductsData);
-            this.Controls.Add(this.panelTopBar);
             this.Controls.Add(this.panelProductsButtons);
             this.Name = "UCProducts";
-            this.Size = new System.Drawing.Size(730, 500);
+            this.Size = new System.Drawing.Size(730, 468);
             this.Load += new System.EventHandler(this.UCProducts_Load);
             this.panelProductsButtons.ResumeLayout(false);
             this.panelProductsData.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
-            this.panelTopBar.ResumeLayout(false);
-            this.panelTopBar.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -238,9 +236,9 @@
         private System.Windows.Forms.Button buttonAddProduct;
         private System.Windows.Forms.Button buttonDeleteProduct;
         private System.Windows.Forms.Button buttonEditProduct;
-        private System.Windows.Forms.Panel panelTopBar;
-        private System.Windows.Forms.Button buttonCloseWindow;
-        private System.Windows.Forms.Button buttonMinimize;
-        private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBoxSearchProduct;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.Label label1;
     }
 }

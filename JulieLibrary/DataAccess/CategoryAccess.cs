@@ -14,7 +14,13 @@ namespace JulieLibrary
             string query = "SELECT * FROM Category";
             return Helper.DapperQueryCategory(query);
         }
-        
+
+        public List<Category> SearchCategory(string name)
+        {
+            string query = $"SELECT * FROM Category WHERE Name LIKE '%{name}%'";
+            return Helper.DapperQueryCategory(query);
+        }
+
         public static void AddCategory(Category category)
         {
             string query = $"INSERT INTO Category (Name) VALUES ('{category.Name}')";

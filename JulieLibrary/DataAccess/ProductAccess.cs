@@ -16,6 +16,12 @@ namespace JulieLibrary
             return Helper.DapperQueryProduct(query);
         }
 
+        public List<Product> SearchProduct(string name)
+        {
+            string query = $"SELECT * FROM Product WHERE Name LIKE '%{name}%'";
+            return Helper.DapperQueryProduct(query);
+        }
+
         public static void AddProduct(Product product)
         {
             string query =  "INSERT INTO Product (Code, Name, ExpDate, Company, MfgYear, Category) " +

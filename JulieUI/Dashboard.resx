@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="panelUserControls.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonCategory.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonCategory.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -147,26 +153,9 @@
         ecpCLZ16HGcqlKcs1OJBdRzHcRzHcRzHcRzHcRzHcZzeWFj4D73jszcHcMw9AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="buttonHome.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAKoAAAAoCAYAAABuDmFRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAy9JREFUeF7tmT9rFFEUxfMRRPAPiYiFoL2FrWAj6gewlYBEQbASbCRg4TcQBIOQ
-        XisrG4tYBEtRQSVWphFsrOzGc96eO+7bfbM77ibuzu75wSFz77nzMnM5xDVZMcYYY4wxxhhjjDkYqqo6
-        Sak0Zv5AQE9BX6U1tY2ZH/hTFPoEBR+hE7KNmT0MJBQhfS8Rh9XMBwjiGvSFqQTvoCMSrwk9fwwws4MB
-        VBBJCqkseg6rmT0MngJIspAG7MkjDqv5vzBwCh4phjSgpxnisDaAvbyhVNaof0llAvVz6DP0C9qB1mUl
-        UBfPCuBt9fsxX9CmRroHHr51SAPOaJY4rAWwkxQOlTVcGKiDiuvdXqu6C12HtlOVz/Cs39AFtTI4TFTW
-        3xvaHJRGugUe/J9DGnBW9xCesSrLAOxjbFDxlcEkT5IpUPPeHZX1WdC2WjXo3YO+Q0NBVdlt8CIThzTg
-        PbqX8J8uh1VgF22CeqdXVleSKVDzp9++yvosqA5jgNYexPnFCypeYhWaKqQB79UZxGEV2EOboGYBCwb7
-        uIygfoNuqs3+ZYgsXlDxAgwpAxVMHNKAZ/SOSjisADs4jKA+gnbVZv8F9BJarKDi4QdDOrSkSdFxwdKH
-        Fe8f4RoUmTSo59gHZ6DjvcvqKtQ0n0n2/IOHjc9E8SfRYlBlNaKxDFkkzr4taynB+0dAGKJ+kYmCquu3
-        0GPoIbSnXnF+ULK7AR54AzoGJdTOkNWIxjJkEZ69ofbSgh0Uw8EFgWmCug79hPg//fvqNc53Hr4YUZkh
-        q7TAhMoMWUVvGcEqDiWohB5ROXa+0/DFiMoMWaUFJlRmyCp6ywhW0Sao8VHsfDIFagbvh8qhs3D9DNpS
-        GfMOaqC2g9oCrKJNUK/1yupBMgXqp9DQL/xVDgHPQe1HbQe1BVjF2KASXL+GPrAn3YLIDY00nhXAKwYV
-        ijNraaQ74KETKjNkOahTgFW0Depp6FXq/iX7jQnqSYJaont/69eDO6hzAlZ3FroIHVXLEIaKqMyQ5aCa
-        2aNcOahmvlGuRqLRGrVHolFjDgblaiQarVF7JBo1xhhjjDHGGGOMMcYYY0wjKyt/AGOOv1vfNaZJAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
+  <metadata name="buttonProduct.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="buttonProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAKoAAAAoCAYAAABuDmFRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -193,6 +182,12 @@
         AElFTkSuQmCC
 </value>
   </data>
+  <metadata name="labelLogo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAk9JREFUaEPt
@@ -225,4 +220,43 @@
         rkJggg==
 </value>
   </data>
+  <metadata name="labelName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelStudentID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="panelLeftBar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="panelTopBar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonCloseWindow.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="buttonCloseWindow.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAM5JREFUSEvt
+        lEEOwiAURHuEbtx4QvWoXbrzNDivGRJIkUIqxkVf8lPKn5mfFNLp5D8JIdxUF7/ughaPX+tI+FDBU7U7
+        BI21cPf2ZySaVcsqD+Glurq1gZ41gGd2qw5CG6A4hD33oD08gsFGyIaw9h70h0cwOgDWIa7j4REFpIfI
+        M10337QqBDkw8r1wUFj6WSA7k0MoaNwnUsDmQF3F29UFRgdAdltYew/6h2CwEYpXkT33oH0IQhugGB6h
+        Zw20DZFo7M8OJBz3uz75MdP0BiXC1QbfwJICAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="buttonMinimize.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="buttonMinimize.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAChJREFUSEtj
+        GAWjYBSMAhLBfyoBqHGYACpPMYAaNwpGwSgYBcQBBgYAYIyPcfRAy9oAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="sqLiteCommandBuilder1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
