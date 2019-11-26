@@ -25,11 +25,19 @@ namespace JulieLibrary
             }
         }
 
-        public static List<Product> DapperQuery(string query)
+        public static List<Product> DapperQueryProduct(string query)
         {
             using (IDbConnection connection = new SQLiteConnection(GetConnectionString()))
             {
                 return connection.Query<Product>(query).AsList();
+            }
+        }
+
+        public static List<Category> DapperQueryCategory(string query)
+        {
+            using (IDbConnection connection = new SQLiteConnection(GetConnectionString()))
+            {
+                return connection.Query<Category>(query).AsList();
             }
         }
     }

@@ -19,7 +19,7 @@ namespace JulieUI
             InitializeComponent();
         }
 
-        private void LoadProduct()
+        public void LoadProduct()
         {
             ProductAccess products = new ProductAccess();
             dataGridViewProducts.DataSource = products.ShowProduct();
@@ -27,7 +27,9 @@ namespace JulieUI
 
         private void buttonAddProduct_Click(object sender, EventArgs e)
         {
-
+            AddProductForm addProductForm = new AddProductForm();
+            addProductForm.Show();
+            LoadProduct();
         }
 
         private void buttonEditProduct_Click(object sender, EventArgs e)
@@ -37,9 +39,14 @@ namespace JulieUI
 
         private void buttonDeleteProduct_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(dataGridViewProducts.SelectedRows[0].Cells[0].Value.ToString());
-            ProductAccess.DeleteProduct(id);
-            LoadProduct();
+            string productName = dataGridViewProducts.SelectedRows[0].Cells[2].Value.ToString();
+            DialogResult confirm = MessageBox.Show($"Do you want to delete \"{productName}\"?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (confirm == DialogResult.Yes)
+            {
+                int id = int.Parse(dataGridViewProducts.SelectedRows[0].Cells[0].Value.ToString());
+                ProductAccess.DeleteProduct(id);
+                LoadProduct();
+            }
         }
 
         private void UCProducts_Load(object sender, EventArgs e)

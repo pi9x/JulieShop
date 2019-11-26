@@ -9,6 +9,12 @@ namespace JulieLibrary
 {
     public class CategoryAccess
     {
+        public List<Category> ShowCategory()
+        {
+            string query = "SELECT * FROM Category";
+            return Helper.DapperQueryCategory(query);
+        }
+        
         public static void AddCategory(Category category)
         {
             string query = $"INSERT INTO Category (Name) VALUES ('{category.Name}')";

@@ -10,17 +10,17 @@ namespace JulieLibrary
 {
     public class ProductAccess
     {
+        public List<Product> ShowProduct()
+        {
+            string query = "SELECT * FROM Product";
+            return Helper.DapperQueryProduct(query);
+        }
+
         public static void AddProduct(Product product)
         {
             string query =  "INSERT INTO Product (Code, Name, ExpDate, Company, MfgYear, Category) " +
                             $"VALUES ('{product.Code}', '{product.Name}', {product.ExpDate}, '{product.Company}', {product.MfgYear}, '{product.Category}')";
             Helper.DapperExecute(query);
-        }
-
-        public List<Product> ShowProduct()
-        {
-            string query = "SELECT * FROM Product";
-            return Helper.DapperQuery(query);
         }
 
         public static void DeleteProduct(int id)

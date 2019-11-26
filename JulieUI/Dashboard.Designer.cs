@@ -96,13 +96,13 @@
             this.labelLogo.AutoSize = true;
             this.labelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLogo.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelLogo.Location = new System.Drawing.Point(3, 3);
+            this.labelLogo.Location = new System.Drawing.Point(5, 3);
             this.labelLogo.Name = "labelLogo";
-            this.labelLogo.Size = new System.Drawing.Size(164, 53);
+            this.labelLogo.Size = new System.Drawing.Size(161, 59);
             this.labelLogo.TabIndex = 4;
-            this.labelLogo.Text = " JULIE ";
+            this.labelLogo.Text = "JULIE";
             // 
             // pictureBox1
             // 
